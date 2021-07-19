@@ -1,0 +1,8 @@
+.history 
+.parcel-cache
+node_modules 
+yarn.lock
+package-lock.json
+yarn-error.log 
+dist 
+.env 
