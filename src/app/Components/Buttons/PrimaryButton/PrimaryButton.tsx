@@ -1,19 +1,17 @@
+import classnames from 'classnames';
 import React, { FC } from "react";
-import * as  Button from './PrimaryButtonStyle'; 
-
-interface PrimaryButtonProps {
-  text?: string;
-  color?: string;
-}
+import { PrimaryButtonProps } from "../../../Models/Props";
+import * as Button from './PrimaryButtonStyle';
+import * as Layout from "../../../style/styleclasses"; 
 
 const PrimaryButton: FC<PrimaryButtonProps> = (
   props = {
     text: "Provide text",
-    color: " bg-white ",
+    color: Layout.whiteBG,
   }
 ) => {
   return (
-    <button className={Button.PrimaryButton + props.color}>
+    <button className={ Button.PrimaryButton+ props.color }>
       {props.text}
     </button>
   );

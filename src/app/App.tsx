@@ -1,21 +1,23 @@
 import React, { FC } from "react";
 import SimpleNav from "./Components/Navbars/SimpleNavbar/Navbar";
 import "tailwindcss/tailwind.css"
-
+import * as Layout from "./style/styleclasses"
 
 
 export default () => {
   const links = ["Login", "Admin"];
   return (
-    <div className="min-h-screen min-w-full overflow-x-hidden">
+    <div className={Layout.screenFlex}>
       <SimpleNav
-        header={"Header working yet? "}
+        color={Layout.blueBG} 
+        header={"Header working yet?"}
         navlinks={links}
       />
-      <section className="flex justify-center items-center min-h-screen">
-        <h1 className=" text-black text-3xl ">hello world</h1>
+      <section className={Layout.screenFlex}>
+        <h1 className={Layout.veryLargeText}>hello world</h1>
       </section>
     </div>
   );
 };
+
 
